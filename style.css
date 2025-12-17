@@ -19,7 +19,7 @@
         text-align: center;
 }
 
-/* TASK 2: Navbar Flexbox */
+/*  Navbar Flexbox */
 .navbar {
     display: flex;
     justify-content: center;
@@ -40,14 +40,14 @@
     padding: 20px;
 }
 
-/* TASK 3: Heading style */
+/*  Heading style */
 h2 {
     color: #333;
     margin-bottom: 20px;
     font-size: 24px;
 }
 
-/* TASK 4: Habit Form Styles */
+/*  Habit Form Styles */
 .habit-form {
     width: 300px;
     margin-bottom: 30px;
@@ -65,7 +65,7 @@ h2 {
     margin-top: 10px;
 }
 
-/* =========== TASK 5: Habit cards FLEXBOX =============*/
+/* ===========  Habit cards FLEXBOX =============*/
 .main-container{
     display: flex;
     gap: 20px;
@@ -85,7 +85,7 @@ h2 {
     margin-top: 10px;
 }
 
-/* =========== TASK 6: STATS GRID ============= */
+/* ===========  STATS GRID ============= */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -95,7 +95,7 @@ h2 {
     border-radius: 5px;
 }
 
-/* ===========  TASK 7:FOOTER ============= */
+/* ===========  FOOTER ============= */
 #footer {
     background-color: #4CAF50;
     color: white;

@@ -1,0 +1,176 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* ===== BODY ===== */
+body {
+  background: #f4f6f8;
+  color: #333;
+    padding: 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* =====  HEADER + NAVBAR ===== */
+#header {
+  background: #4a6cf7;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-list li:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* ===== MAIN ===== */
+.main-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* =====  VISUAL HIERARCHY ===== */
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* =====  INPUT FOCUS ===== */
+.habit-form {
+  display: flex;
+  gap: 10px;
+    align-items: center;
+}
+
+.habit-form input,
+.habit-form select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.habit-form input:focus,
+.habit-form select:focus {
+  outline: none;
+  border-color: #4a6cf7;
+    box-shadow: 0 0 5px rgba(74, 108, 247, 0.5);
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+
+}
+
+button:hover {
+  background: #3655d4;
+  transform: scale(1.05);
+}
+
+/* =====  HABIT CARDS ===== */
+.habits-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.habit-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.8s ease;
+
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* =====  CSS SUPPORT ===== */
+.habit-card.completed {
+  background: #d7ffd9;
+  text-decoration: line-through;
+}
+
+/* ===== STATS GRID ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* =====  RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .habit-form {
+    flex-direction: column;
+  }
+
+  .habits-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== FOOTER ===== */
+#footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+    margin-top: 30px;
+}
